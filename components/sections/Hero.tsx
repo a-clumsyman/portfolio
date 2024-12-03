@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { AnimatedText } from "@/components/ui/animated-text";
 import { ParticleBackground } from "@/components/ui/particle-background";
 import { SocialLinks } from "@/components/sections/hero/social-links";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -41,9 +42,9 @@ export default function Hero() {
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <Link href="/chanakyaBevaraResume.pdf" target="_blank">
               View Resume
-            </a>
+            </Link>
           </Button>
         </div>
 
