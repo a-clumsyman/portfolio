@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { FadeIn } from "@/components/ui/fade-in";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -25,7 +26,10 @@ export default function Contact() {
                 <Input type="email" placeholder="Your Email" />
               </div>
               <div>
-                <Textarea placeholder="Your Message" className="min-h-[150px]" />
+                <Textarea
+                  placeholder="Your Message"
+                  className="min-h-[150px]"
+                />
               </div>
               <Button className="w-full">Send Message</Button>
             </form>
@@ -36,15 +40,15 @@ export default function Contact() {
           <Card className="p-6">
             <h3 className="text-xl font-semibold mb-4">Connect With Me</h3>
             <div className="space-y-4">
-              <a
-                href="https://github.com/yourusername"
+              <Link
+                href="https://github.com/a-clumsyman"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Github className="h-5 w-5" />
                 GitHub
-              </a>
+              </Link>
               <a
                 href="https://linkedin.com/in/yourusername"
                 target="_blank"
@@ -54,13 +58,13 @@ export default function Contact() {
                 <Linkedin className="h-5 w-5" />
                 LinkedIn
               </a>
-              <a
-                href="mailto:your.email@example.com"
+              <Link
+                href="mailto:chanakya.bevera@gmail.com"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-5 w-5" />
-                your.email@example.com
-              </a>
+                chanakya.bevera@gmail.com
+              </Link>
             </div>
           </Card>
         </FadeIn>
